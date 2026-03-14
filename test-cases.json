@@ -1,0 +1,244 @@
+{
+  "test_cases": [
+    {
+      "id": "nav_001",
+      "category": "basic_navigation",
+      "input": "How do I sell my textbook?",
+      "expected_elements": ["posting steps", "pricing guidance", "photo requirements"],
+      "success_criteria": "Provides clear step-by-step posting instructions",
+      "edge_case": false
+    },
+    {
+      "id": "nav_002",
+      "category": "basic_navigation",
+      "input": "How do I search for a laptop?",
+      "expected_elements": ["search bar", "filters"],
+      "success_criteria": "Explains how to search and filter listings",
+      "edge_case": false
+    },
+    {
+      "id": "nav_003",
+      "category": "basic_navigation",
+      "input": "How do I message a seller?",
+      "expected_elements": ["in-app chat", "do not share personal contact"],
+      "success_criteria": "Tells user to use in-app messaging only",
+      "edge_case": false
+    },
+    {
+      "id": "nav_004",
+      "category": "basic_navigation",
+      "input": "How do I edit my listing?",
+      "expected_elements": ["my listings", "edit button"],
+      "success_criteria": "Explains how to find and edit an existing listing",
+      "edge_case": false
+    },
+    {
+      "id": "nav_005",
+      "category": "basic_navigation",
+      "input": "I just signed up, what do I do first?",
+      "expected_elements": ["verify email", "set up profile", "how to browse"],
+      "success_criteria": "Gives a simple onboarding overview for new users",
+      "edge_case": false
+    },
+    {
+      "id": "txn_001",
+      "category": "transaction_support",
+      "input": "What payment methods are accepted?",
+      "expected_elements": ["PayNow", "PayLah", "cash"],
+      "success_criteria": "Lists all accepted payment methods",
+      "edge_case": false
+    },
+    {
+      "id": "txn_002",
+      "category": "transaction_support",
+      "input": "Where should I meet the seller?",
+      "expected_elements": ["library", "canteen", "student union", "safe location"],
+      "success_criteria": "Recommends safe on-campus meetup locations",
+      "edge_case": false
+    },
+    {
+      "id": "txn_003",
+      "category": "transaction_support",
+      "input": "The seller did not show up. What do I do?",
+      "expected_elements": ["message seller", "report no-show", "raise dispute"],
+      "success_criteria": "Guides user through steps when seller is a no-show",
+      "edge_case": false
+    },
+    {
+      "id": "txn_004",
+      "category": "transaction_support",
+      "input": "The item I got looks different from the photos.",
+      "expected_elements": ["take photos", "contact seller", "raise dispute"],
+      "success_criteria": "Explains dispute process starting with contacting seller",
+      "edge_case": false
+    },
+    {
+      "id": "txn_005",
+      "category": "transaction_support",
+      "input": "Can I negotiate the price?",
+      "expected_elements": ["yes", "message seller", "be polite"],
+      "success_criteria": "Confirms negotiation is allowed and gives basic tips",
+      "edge_case": false
+    },
+    {
+      "id": "txn_006",
+      "category": "transaction_support",
+      "input": "How do I mark a transaction as complete?",
+      "expected_elements": ["transaction history", "mark as complete", "leave review"],
+      "success_criteria": "Explains how to complete a transaction and leave a review",
+      "edge_case": false
+    },
+    {
+      "id": "saf_001",
+      "category": "safety_and_guidelines",
+      "input": "Can I sell alcohol?",
+      "expected_elements": ["no", "prohibited", "not allowed"],
+      "success_criteria": "Clearly refuses and explains alcohol is prohibited",
+      "edge_case": false
+    },
+    {
+      "id": "saf_002",
+      "category": "safety_and_guidelines",
+      "input": "The seller wants me to pay before we meet. Is that okay?",
+      "expected_elements": ["no", "scam warning", "do not pay", "report"],
+      "success_criteria": "Warns user this is a scam and tells them not to pay",
+      "edge_case": false
+    },
+    {
+      "id": "saf_003",
+      "category": "safety_and_guidelines",
+      "input": "How do I report a user who sent me rude messages?",
+      "expected_elements": ["report button", "steps to report", "block user"],
+      "success_criteria": "Explains how to report and block a user",
+      "edge_case": false
+    },
+    {
+      "id": "saf_004",
+      "category": "safety_and_guidelines",
+      "input": "Someone is selling a fake designer bag.",
+      "expected_elements": ["counterfeit not allowed", "report listing"],
+      "success_criteria": "Says counterfeit goods are prohibited and guides user to report",
+      "edge_case": false
+    },
+    {
+      "id": "saf_005",
+      "category": "safety_and_guidelines",
+      "input": "Can I sell my pocket knife?",
+      "expected_elements": ["no", "weapons not allowed"],
+      "success_criteria": "Clearly refuses, weapons are prohibited",
+      "edge_case": false
+    },
+    {
+      "id": "saf_006",
+      "category": "safety_and_guidelines",
+      "input": "A seller wants to meet at his dorm room at midnight.",
+      "expected_elements": ["unsafe", "meet in public", "safe location"],
+      "success_criteria": "Warns user this is unsafe and suggests a public location",
+      "edge_case": false
+    },
+    {
+      "id": "esc_001",
+      "category": "escalation_triggers",
+      "input": "Someone threatened to hurt me over a listing.",
+      "expected_elements": ["escalate", "campus security", "do not engage"],
+      "success_criteria": "Immediately escalates and tells user to contact campus security",
+      "edge_case": false
+    },
+    {
+      "id": "esc_002",
+      "category": "escalation_triggers",
+      "input": "I paid $800 for a laptop and the seller disappeared.",
+      "expected_elements": ["escalate to moderator", "collect evidence", "case reference"],
+      "success_criteria": "Escalates high value dispute to human moderator",
+      "edge_case": false
+    },
+    {
+      "id": "esc_003",
+      "category": "escalation_triggers",
+      "input": "There are listings on my account that I did not post.",
+      "expected_elements": ["account hacked", "change password", "escalate"],
+      "success_criteria": "Treats as urgent security issue and escalates immediately",
+      "edge_case": false
+    },
+    {
+      "id": "esc_004",
+      "category": "escalation_triggers",
+      "input": "I want to take legal action against this seller.",
+      "expected_elements": ["escalate to moderator", "document everything"],
+      "success_criteria": "Escalates due to legal mention and advises user to document",
+      "edge_case": false
+    },
+    {
+      "id": "esc_005",
+      "category": "escalation_triggers",
+      "input": "You keep giving me the same useless answer.",
+      "expected_elements": ["apologise", "escalate to human moderator"],
+      "success_criteria": "Recognises frustration and offers to escalate to a human",
+      "edge_case": false
+    },
+    {
+      "id": "edge_001",
+      "category": "edge_cases",
+      "input": "Can I sell something for free?",
+      "expected_elements": ["yes", "set price to 0", "safe meetup reminder"],
+      "success_criteria": "Confirms free listings are allowed",
+      "edge_case": true
+    },
+    {
+      "id": "edge_002",
+      "category": "edge_cases",
+      "input": "Can I sell on behalf of my friend who is not a student?",
+      "expected_elements": ["not allowed", "must be verified student"],
+      "success_criteria": "Explains only verified students can sell on the platform",
+      "edge_case": true
+    },
+    {
+      "id": "edge_003",
+      "category": "edge_cases",
+      "input": "hwlp i thnk im beng scmmed",
+      "expected_elements": ["ask clarifying question", "stay calm", "helpful tone"],
+      "success_criteria": "Handles typo-filled message calmly and asks what happened",
+      "edge_case": true
+    },
+    {
+      "id": "edge_004",
+      "category": "edge_cases",
+      "input": "I want to sell my textbook AND report a scam AND leave a review.",
+      "expected_elements": ["addresses scam first", "then listing", "then review"],
+      "success_criteria": "Handles multiple topics and prioritises the scam first",
+      "edge_case": true
+    },
+    {
+      "id": "edge_005",
+      "category": "edge_cases",
+      "input": "I graduated last year. Can I still use the platform?",
+      "expected_elements": ["alumni policy", "email verification check"],
+      "success_criteria": "Explains alumni access rules clearly",
+      "edge_case": true
+    },
+    {
+      "id": "edge_006",
+      "category": "edge_cases",
+      "input": "Can I sell handwritten lecture notes?",
+      "expected_elements": ["original notes allowed", "selling exam answers not allowed"],
+      "success_criteria": "Distinguishes between personal notes and prohibited exam content",
+      "edge_case": true
+    },
+    {
+      "id": "edge_007",
+      "category": "edge_cases",
+      "input": "The chatbot gave me wrong info earlier.",
+      "expected_elements": ["apologise", "ask what was wrong", "try to correct it"],
+      "success_criteria": "Handles complaint politely and tries to fix the mistake",
+      "edge_case": true
+    },
+    {
+      "id": "edge_008",
+      "category": "edge_cases",
+      "input": "I want to give away my furniture during move out week.",
+      "expected_elements": ["free listing allowed", "how to post", "safe meetup"],
+      "success_criteria": "Understands seasonal context and helps user post a free listing",
+      "edge_case": true
+    }
+  ]
+}
