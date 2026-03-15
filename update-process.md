@@ -42,9 +42,8 @@ Some updates are needed at specific times of year:
 
 | Time of year | What to update |
 
-| Start of semester (Aug-Dec) | Add reminders about textbook listings |
-| Exam season, depending on the school curriculum| Add warnings about prohibited exam content |
-| Move out week (Dec-Jan) | Add tips for listing furniture |
+ Start of semester (Aug-Dec): Add reminders about textbook listings 
+ Move out week (Dec-Jan): Add tips for listing for common items that will be sold during this period. 
 
 ## Rollback
 If the new prompt causes problems:
