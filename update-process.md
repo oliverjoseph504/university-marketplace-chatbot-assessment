@@ -6,32 +6,21 @@ anything that already works.
 
 ## Step by step workflow
 1. Someone notices a problem or a new feature is needed
-        |
-        v
+        
 2. Edit prompt.md with the changes
-        |
-        v
+
 3. Run all 30 test cases manually on Poe.com
-        |
-        v
-4. Did all tests pass?
-       / \
-     YES   NO
-      |     |
-      |   Fix the prompt and go back to step 3
-      v
+        
+4. Did all tests pass? (If yes, continue to step 5. If no, fix the prompt and go back to step 3).
+     
 5. Get someone else to review the changes
-        |
-        v
+        
 6. Save the old prompt as prompt-v1.md (backup)
-        |
-        v
+       
 7. Upload the new prompt.md to the chatbot on Poe.com
-        |
-        v
+        
 8. Monitor for 24 hours to check for complaints
-        |
-        v
+
 9. If something breaks, restore from the backup file
 
 ## Version control
